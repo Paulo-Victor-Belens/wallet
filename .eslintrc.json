@@ -1,0 +1,27 @@
+{
+  "extends": "@trybe/eslint-config-frontend",
+  "overrides": [
+    {
+      "files": ["*.jsx"],
+      "rules": {
+        "react/jsx-max-depth": ["error", { "max": 8 }],
+        "max-len": [
+          "error",
+          {
+            "code": 90,
+            "ignoreComments": true,
+            "ignoreUrls": true,
+            "ignoreRegExpLiterals": true,
+            "ignoreStrings": true
+          }
+        ],
+        "max-lines": ["off"],
+        "no-magic-numbers": ["off"]
+      }
+    }
+  ]
+}
+
+
+
+
